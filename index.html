@@ -1,0 +1,159 @@
+
+<p> </p>
+<h1 class="text-center">Sign Up</h1> 
+<p class="text-center"> Please fill in this form to create an account.</p>
+<hr>
+<style>
+    body{background-color:pink;}
+    h1{color:rgb(221, 104, 123)}
+    label{color:rgb(221, 104, 123)}
+    .text-center{
+       text-align: center; 
+    }
+</style>
+
+<form action="action_page.php" style="width: 50%; margin: 0 auto;">
+    <div class="container"> 
+<label for="email"><b>Email</b>
+<input type="text" placeholder="Enter Email" name="email" required>
+
+<label for="psw"><b>Password</b>
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw-repeat"><b>Repeat Password</b>
+ <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<label>
+<input type="checkbox" checked="checked" name="rememeber" style="margin-bottom:15px;"> Rememeber me </label>
+<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+<div class="clearfix">
+</div>
+
+
+
+<button type="button" onclick="cancelbtn">Cancel</button>
+<button id="openPopup" style="padding: 10px 20px; background-color: #e95f9f;
+                                  color: #fff; border: none; border-radius: 5px;">Sign Up</button>
+</div>
+</div>
+</form> 
+<div id="popup" class="popup">
+    <img src="https://cdn.prod.website-files.com/64ef86fd99a286b447305635/6662830f6d9e1ec1429bb0da_6250a54e5aafad58b099d32a_Teams-Meme.webp">
+    <button id="closePopup" style="margin-top: 10px; padding:
+    5px 10px; background-color: #e95f9f; color: #fff; 
+    border: none; border-radius: 3px;">Close</button>  
+</div>
+</div>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input [type=text]:focus, imput[type=password]:focus {backgound-color: #ddd; outline: none;}
+hr{
+    <border:"1px" solid #f1f1f1;
+    margin-bottom: "25px"
+}
+ /* Set a style for all buttons */
+button {
+  background-color: #e95f9f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}   
+button:hover{ 
+    opacity:1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #e95f9f;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.popup {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column; /* Ensures vertical stacking */
+            align-items: center; /* Centers content */
+            max-width: 90%
+            max-height: 90%
+        }
+/* Center the image */
+.popup img {
+  max-width: 100%
+  height: auto;
+  align-self: center; /* Ensure it's centered */
+}
+/* Move the close button to the bottom */
+#ClosePopup {
+  margin-top: auto; /* Pushes button to the bottom */
+  padding: 10px;
+  background-color: #e959f9
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+</style>
+<script>
+  const openPopup = document.getElementById('openPopup');
+  const closePopup = document.getElementById('closePopup');
+  const popup = document.getElementById('popup');
+
+  openPopup.addEventListener('click', () => {
+      popup.style.display = 'flex';
+  });
+
+  closePopup.addEventListener('click', () => {
+      popup.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+      if (event.target === popup) {
+          popup.style.display = 'none';
+      }
+  });
+</script>          
